@@ -1,19 +1,19 @@
 # 🔬 ResearchRAG: Autonomous AI Research Report Generator
 
-> **Autonomous AI Research Report Generator powered by Retrieval-Augmented Generation (RAG), FAISS vector search, Cross-Encoder reranking, and grounded citation verification.**
+> **Autonomous AI Research Report Generator powered by Retrieval-Augmented Generation (RAG), FAISS vector search, Cross-Encoder reranking, and citation provenance verification.**
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Tests: 19 Passed](https://img.shields.io/badge/Tests-19%20Passed-brightgreen.svg)]()
-[![Retrieval Precision](https://img.shields.io/badge/Retrieval%20P%40K-96.9%25-blueviolet.svg)]()
-[![Semantic Grounding](https://img.shields.io/badge/Grounding%20Score-80.5%25-success.svg)]()
+[![Retrieval Alignment](https://img.shields.io/badge/Retrieval%20Alignment-96.9%25-blueviolet.svg)]()
+[![Lexical Grounding](https://img.shields.io/badge/Lexical%20Grounding-80.5%25-success.svg)]()
 
 ---
 
 ## 📌 Repository Metadata
 
 - **GitHub Repository Description (<160 chars)**:
-  `Autonomous AI Research Report Generator powered by multi-stage RAG, FAISS, Cross-Encoder reranking, contradiction detection, and grounded citation auditing.`
+  `Autonomous AI Research Report Generator powered by multi-stage RAG, FAISS, Cross-Encoder reranking, contradiction detection, and citation provenance auditing.`
 - **Recommended GitHub Topics**:
   `retrieval-augmented-generation`, `rag`, `vector-search`, `faiss`, `sentence-transformers`, `information-retrieval`, `academic-research`, `streamlit`, `python`, `citation-grounding`, `llm`, `natural-language-processing`
 
@@ -95,9 +95,9 @@ flowchart TD
 - **Contradiction Detection**: Automatically surfaces opposing claims and empirical disagreements between papers (e.g. dense vs sparse retrieval out-of-domain).
 - **Research Gap Detection**: Distinguishes author-stated limitations from synthesized domain bottlenecks.
 
-### 4. Citation Grounding & Hallucination Audit
+### 4. Citation Grounding & Provenance Verification
 - **Strict Evidence Citation**: Every claim is cited `[N]` referencing numbered evidence context.
-- **Automated Validation Audit**: Verifies that cited document names, page numbers, and evidence text exist with high token overlap ($\ge 0.15$), calculating quantitative grounding scores and flagging unsupported claims.
+- **Automated Validation Audit**: Verifies that cited document names, page numbers, and evidence text exist with stopword-filtered token overlap ($\ge 0.15$), calculating quantitative grounding scores and flagging unsupported claims.
 
 ### 5. Modular LLM Provider Architecture
 - Supports **Google Gemini**, **Groq (Llama-3)**, **OpenAI (GPT-4o-mini)**, **Ollama (Local)**, and an **Offline Deterministic Research Synthesizer** that runs 100% locally with zero API keys.
@@ -107,22 +107,22 @@ flowchart TD
 
 ---
 
-## 📊 Quantitative Evaluation & Benchmark Results
+## 📊 Quantitative Evaluation Benchmark Results
 
-Evaluated on 4 standardized academic research questions using `scripts/evaluate.py`:
+Evaluated across a **curated 3-document / 4-question benchmark suite** using `scripts/evaluate.py`:
 
-| Metric | Measured Value | Standard Target | Status |
+| Evaluation Metric | Measured Value | Standard Target | Metric Scope & Nature |
 | :--- | :--- | :--- | :--- |
-| **Mean Reciprocal Rank (MRR)** | **0.4567** | $\ge 0.400$ | ✅ Exceeds Standard |
-| **Retrieval Precision@K** | **96.9%** | $\ge 85.0\%$ | ✅ Exceeds Standard |
-| **Retrieval Recall@K** | **93.8%** | $\ge 80.0\%$ | ✅ Exceeds Standard |
-| **Source Document Coverage** | **66.7%** | $\ge 50.0\%$ | ✅ Exceeds Standard |
-| **Citation Validity Rate** | **79.5%** | $\ge 75.0\%$ | ✅ Exceeds Standard |
-| **Semantic Grounding Score** | **0.8051** | $\ge 0.700$ | ✅ Exceeds Standard |
-| **Hallucination / Unsupported Rate** | **20.5%** | $\le 25.0\%$ | ✅ Low Hallucination |
-| **Average Pipeline Latency** | **0.21s** | $\le 5.00s$ | ✅ High Performance |
+| **Candidate Rank Metric** | **0.4567** | $\ge 0.400$ | Candidate reciprocal rank distribution |
+| **Similarity-Threshold Alignment** | **96.9%** | $\ge 85.0\%$ | Fraction of retrieved chunks with cosine similarity $\ge 0.25$ |
+| **Heuristic Facet Coverage** | **93.8%** | $\ge 80.0\%$ | Query facet capacity coverage |
+| **Source Document Coverage** | **66.7%** | $\ge 50.0\%$ | Fraction of ingested documents contributing evidence |
+| **Citation Provenance Validity** | **79.5%** | $\ge 75.0\%$ | Percentage of citations verified for document & page bounds |
+| **Lexical Grounding Score** | **0.8051** | $\ge 0.700$ | Stopword-filtered token intersection between claim and chunk |
+| **Unsupported / Low-Overlap Rate** | **20.5%** | $\le 25.0\%$ | Citations lacking strong lexical support in context |
+| **Average Pipeline Latency** | **0.21s** | $\le 5.00s$ | Local CPU execution time |
 
-*See [docs/EVALUATION.md](docs/EVALUATION.md) for full benchmark methodology and breakdowns.*
+*See [docs/EVALUATION.md](docs/EVALUATION.md) for full benchmark methodology and definitions.*
 
 ---
 
@@ -134,8 +134,7 @@ researchrag/
 │   ├── ingestion/          # PDF parsing, cleaning, academic chunker, caching
 │   │   ├── pdf_parser.py
 │   │   ├── cleaner.py
-│   │   ├── chunker.py
-│   │   └── manager.py
+│   │   └── chunker.py
 │   ├── retrieval/          # Embeddings, FAISS vector store, query processor, reranker
 │   │   ├── embeddings.py
 │   │   ├── vector_store.py
@@ -226,7 +225,7 @@ Open your browser at `http://localhost:8501`.
 
 ### Run Test Suite
 ```bash
-pytest
+pytest -v
 ```
 *Result: 19 passed across ingestion, retrieval, analysis, generation, evaluation, and export modules.*
 

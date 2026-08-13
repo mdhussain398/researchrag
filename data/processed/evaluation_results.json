@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-14T02:39:31Z",
+  "timestamp": "2026-08-14T02:52:29Z",
   "aggregate_metrics": {
     "mean_reciprocal_rank": 0.4567,
     "retrieval_precision_at_k": 0.9688,
@@ -8,7 +8,7 @@
     "citation_validity_rate": 0.7952,
     "semantic_grounding_score": 0.8051,
     "hallucination_rate": 0.2048,
-    "average_latency_seconds": 0.21
+    "average_latency_seconds": 0.2
   },
   "individual_benchmarks": [
     {
@@ -26,7 +26,7 @@
       "contradictions_found": 1,
       "contradiction_target_hit": false,
       "research_gaps_found": 6,
-      "latency_seconds": 0.33
+      "latency_seconds": 0.29
     },
     {
       "benchmark_id": "bm_02",
@@ -43,7 +43,7 @@
       "contradictions_found": 0,
       "contradiction_target_hit": false,
       "research_gaps_found": 6,
-      "latency_seconds": 0.18
+      "latency_seconds": 0.17
     },
     {
       "benchmark_id": "bm_03",

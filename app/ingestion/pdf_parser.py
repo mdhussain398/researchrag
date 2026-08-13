@@ -7,7 +7,7 @@ import re
 import hashlib
 from pathlib import Path
 from typing import List, Dict, Any, Tuple, Optional
-import fitz  # PyMuPDF
+import pymupdf as fitz
 
 from app.models.schemas import DocumentMetadata
 from app.ingestion.cleaner import TextCleaner
