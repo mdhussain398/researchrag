@@ -37,8 +37,8 @@ def render_home():
         st.markdown("""
         <div class="metric-card">
             <div class="metric-card-title">Citations</div>
-            <div class="metric-card-value">100% Grounded</div>
-            <div class="metric-card-subtitle">Verified against source chunks</div>
+            <div class="metric-card-value">Citation Grounded</div>
+            <div class="metric-card-subtitle">Evidence-backed reports with citation validation</div>
         </div>
         """, unsafe_allow_html=True)
     with col3:
