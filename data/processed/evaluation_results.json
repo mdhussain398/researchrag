@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-08-14T02:39:31Z",
+  "aggregate_metrics": {
+    "mean_reciprocal_rank": 0.4567,
+    "retrieval_precision_at_k": 0.9688,
+    "retrieval_recall_at_k": 0.9375,
+    "source_document_coverage": 0.6667,
+    "citation_validity_rate": 0.7952,
+    "semantic_grounding_score": 0.8051,
+    "hallucination_rate": 0.2048,
+    "average_latency_seconds": 0.21
+  },
+  "individual_benchmarks": [
+    {
+      "benchmark_id": "bm_01",
+      "question": "How does dense passage retrieval (DPR) compare with traditional sparse BM25 retrieval for open-domain question answering?",
+      "retrieval_count": 8,
+      "mean_similarity": 0.6324,
+      "mrr": 0.4567,
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "source_coverage": 0.6667,
+      "citation_validity": 0.8333,
+      "grounding_score": 0.821,
+      "hallucination_rate": 0.1667,
+      "contradictions_found": 1,
+      "contradiction_target_hit": false,
+      "research_gaps_found": 6,
+      "latency_seconds": 0.33
+    },
+    {
+      "benchmark_id": "bm_02",
+      "question": "What is the impact of multi-stage cross-encoder reranking on retrieval precision and latency?",
+      "retrieval_count": 6,
+      "mean_similarity": 0.5485,
+      "mrr": 0.4567,
+      "precision_at_k": 1.0,
+      "recall_at_k": 0.75,
+      "source_coverage": 0.3333,
+      "citation_validity": 0.8333,
+      "grounding_score": 0.7683,
+      "hallucination_rate": 0.1667,
+      "contradictions_found": 0,
+      "contradiction_target_hit": false,
+      "research_gaps_found": 6,
+      "latency_seconds": 0.18
+    },
+    {
+      "benchmark_id": "bm_03",
+      "question": "How do Retrieval-Augmented Generation (RAG) pipelines mitigate hallucinations compared to long-context LLMs?",
+      "retrieval_count": 8,
+      "mean_similarity": 0.4142,
+      "mrr": 0.4567,
+      "precision_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "source_coverage": 1.0,
+      "citation_validity": 0.8,
+      "grounding_score": 0.8298,
+      "hallucination_rate": 0.2,
+      "contradictions_found": 2,
+      "contradiction_target_hit": false,
+      "research_gaps_found": 4,
+      "latency_seconds": 0.15
+    },
+    {
+      "benchmark_id": "bm_04",
+      "question": "What are the primary computational limitations and research gaps in deploying production RAG systems?",
+      "retrieval_count": 8,
+      "mean_similarity": 0.3196,
+      "mrr": 0.4567,
+      "precision_at_k": 0.875,
+      "recall_at_k": 1.0,
+      "source_coverage": 0.6667,
+      "citation_validity": 0.7143,
+      "grounding_score": 0.8014,
+      "hallucination_rate": 0.2857,
+      "contradictions_found": 2,
+      "contradiction_target_hit": false,
+      "research_gaps_found": 6,
+      "latency_seconds": 0.18
+    }
+  ]
+}
