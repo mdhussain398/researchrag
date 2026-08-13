@@ -243,6 +243,9 @@ python scripts/evaluate.py
 - **Index Quantization**: For billion-token enterprise corpora, implementing IVF-PQ and HNSW approximate nearest neighbors will further reduce RAM requirements.
 
 ---
+👨‍💻 Author
+
+Mohammed Hussain — CSE (AIML) @ Malnad College Of Engineering
 
 ## 📜 License
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
