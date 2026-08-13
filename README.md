@@ -31,6 +31,8 @@ Most "Chat with PDFs" tools are generic conversational wrappers:
 $$\text{PDFs} \longrightarrow \text{Section-Aware Parsing} \longrightarrow \text{FAISS Indexing} \longrightarrow \text{Multi-Query Retrieval} \longrightarrow \text{Cross-Encoder Reranking} \longrightarrow \text{Synthesis} \longrightarrow \text{Citation Grounding Audit}$$
 
 ---
+<img width="1440" height="900" alt="Screenshot 2026-08-14 at 4 18 35 AM" src="https://github.com/user-attachments/assets/1d78ade6-f0a1-4132-b9b5-b0435c8d9ac8" />
+
 <img width="1440" height="900" alt="Screenshot 2026-08-14 at 3 24 51 AM" src="https://github.com/user-attachments/assets/6deba5e8-a74f-4667-9e74-897763eed050" />
 
 <img width="1440" height="900" alt="Screenshot 2026-08-14 at 3 25 43 AM" src="https://github.com/user-attachments/assets/7e543eb3-f3b9-41ac-860c-cf7e79db74ff" />
@@ -43,7 +45,6 @@ $$\text{PDFs} \longrightarrow \text{Section-Aware Parsing} \longrightarrow \text
 
 <img width="1440" height="900" alt="Screenshot 2026-08-14 at 3 28 10 AM" src="https://github.com/user-attachments/assets/93a5b1ca-627b-4513-840d-533a50f77c1e" />
 
-<img width="1440" height="900" alt="Screenshot 2026-08-14 at 4 18 35 AM" src="https://github.com/user-attachments/assets/1d78ade6-f0a1-4132-b9b5-b0435c8d9ac8" />
 
 
 ## 🏗️ System Architecture
