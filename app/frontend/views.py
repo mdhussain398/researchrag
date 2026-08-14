@@ -18,6 +18,7 @@ from app.evaluation.benchmark_dataset import BENCHMARK_SUITE
 def render_home():
     """Renders the Home & Overview page."""
     st.markdown("## 📚 Welcome to ResearchRAG")
+    st.markdown("### 🚀 Built by Mohammed Hussain")
     st.markdown(
         "**ResearchRAG** is an autonomous AI Research Report Generator powered by **Retrieval-Augmented Generation (RAG)**. "
         "Unlike generic 'chat with PDFs' tools, ResearchRAG performs multi-aspect cross-study synthesis, empirical comparison, "
