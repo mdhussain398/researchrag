@@ -31,19 +31,14 @@ Most "Chat with PDFs" tools are generic conversational wrappers:
 $$\text{PDFs} \longrightarrow \text{Section-Aware Parsing} \longrightarrow \text{FAISS Indexing} \longrightarrow \text{Multi-Query Retrieval} \longrightarrow \text{Cross-Encoder Reranking} \longrightarrow \text{Synthesis} \longrightarrow \text{Citation Grounding Audit}$$
 
 ---
-<img width="1440" height="900" alt="Screenshot 2026-08-14 at 4 18 35 AM" src="https://github.com/user-attachments/assets/1d78ade6-f0a1-4132-b9b5-b0435c8d9ac8" />
+<img width="1440" height="900" alt="Screenshot 2026-08-14 at 8 22 37 PM" src="https://github.com/user-attachments/assets/674d3055-0647-4275-aa4e-7bd508347e68" />
+<img width="1440" height="900" alt="Screenshot 2026-08-14 at 8 22 49 PM" src="https://github.com/user-attachments/assets/aa262bbd-27ee-4804-894b-f4f15760de8f" />
+<img width="1440" height="900" alt="Screenshot 2026-08-14 at 8 22 58 PM" src="https://github.com/user-attachments/assets/57c9d18f-3a65-4d06-bad4-dd487b61eaf1" />
+<img width="1440" height="900" alt="Screenshot 2026-08-14 at 8 23 18 PM" src="https://github.com/user-attachments/assets/b4015529-13e4-4a9b-b4eb-dc0f93a2eb8c" />
+<img width="1440" height="900" alt="Screenshot 2026-08-14 at 8 23 24 PM" src="https://github.com/user-attachments/assets/cae3b3a8-975f-476e-8487-f7e6738d13ff" />
+<img width="1440" height="900" alt="Screenshot 2026-08-14 at 8 23 30 PM" src="https://github.com/user-attachments/assets/3ad1bed0-122b-4867-9780-8683f5a90fef" />
+<img width="1440" height="900" alt="Screenshot 2026-08-14 at 8 23 36 PM" src="https://github.com/user-attachments/assets/c387b41b-e528-4b70-89c2-59e9f2d01b32" />
 
-<img width="1440" height="900" alt="Screenshot 2026-08-14 at 3 24 51 AM" src="https://github.com/user-attachments/assets/6deba5e8-a74f-4667-9e74-897763eed050" />
-
-<img width="1440" height="900" alt="Screenshot 2026-08-14 at 3 25 43 AM" src="https://github.com/user-attachments/assets/7e543eb3-f3b9-41ac-860c-cf7e79db74ff" />
-
-<img width="1440" height="900" alt="Screenshot 2026-08-14 at 3 26 12 AM" src="https://github.com/user-attachments/assets/04f8bc99-980e-4543-b6fb-9cd6553b3a61" />
-
-<img width="1440" height="900" alt="Screenshot 2026-08-14 at 3 26 23 AM" src="https://github.com/user-attachments/assets/d37ad1cc-245c-4dce-a914-6aacf1a7e8c1" />
-
-<img width="1440" height="900" alt="Screenshot 2026-08-14 at 3 26 35 AM" src="https://github.com/user-attachments/assets/09c95955-aaf4-4d7d-a0c8-d7a2e5c92cd9" />
-
-<img width="1440" height="900" alt="Screenshot 2026-08-14 at 3 28 10 AM" src="https://github.com/user-attachments/assets/93a5b1ca-627b-4513-840d-533a50f77c1e" />
 
 
 
