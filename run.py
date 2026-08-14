@@ -151,7 +151,6 @@ def main():
     st.sidebar.markdown(f"- **Current LLM**: `{current_cfg.llm_provider}`")
 
     st.sidebar.markdown("---")
-    st.sidebar.caption("ResearchRAG v1.0 • Antigravity AI Engine")
 
     # Route Views
     if selected_view == "🏠 Home":
